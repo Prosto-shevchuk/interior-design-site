@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Дизайнер интерьера | Санкт-Петербург</title>
+<title>Prosto Shevchuk Interior Design</title>
 
 <style>
 
@@ -31,6 +31,7 @@ background:white;
 padding:20px 0;
 position:sticky;
 top:0;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 nav{
@@ -81,6 +82,14 @@ padding:12px 25px;
 background:#c5a880;
 color:white;
 text-decoration:none;
+border-radius:6px;
+transition:0.3s;
+border:none;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#b89a70;
 }
 
 section{
@@ -115,6 +124,11 @@ gap:20px;
 width:100%;
 height:250px;
 object-fit:cover;
+transition:0.3s;
+}
+
+.portfolio img:hover{
+transform:scale(1.03);
 }
 
 .steps{
@@ -160,7 +174,7 @@ background:#eee;
 <header>
 <div class="container">
 <nav>
-<div class="logo">Interior Design</div>
+<div class="logo">Prosto Shevchuk</div>
 <ul>
 <li><a href="#about">Обо мне</a></li>
 <li><a href="#services">Услуги</a></li>
@@ -174,9 +188,9 @@ background:#eee;
 <section class="hero">
 <div class="container">
 <div class="hero-content">
-<h1>Дизайн интерьера квартир и домов</h1>
-<p>Создаю современные и функциональные интерьеры в Санкт-Петербурге</p>
-<a href="#contact" class="btn">Получить консультацию</a>
+<h1>Дизайн интерьеров, в которых хочется жить</h1>
+<p>Современные и продуманные пространства под ваш образ жизни</p>
+<a href="#contact" class="btn">Обсудить проект</a>
 </div>
 </div>
 </section>
@@ -185,9 +199,8 @@ background:#eee;
 <div class="container">
 <h2>О дизайнере</h2>
 <p style="text-align:center; max-width:700px; margin:auto;">
-Я создаю продуманные интерьеры, в которых сочетаются эстетика,
-функциональность и комфорт. Работаю с квартирами и домами любой площади,
-помогаю реализовать интерьер от идеи до реализации.
+Я создаю современные, спокойные и эстетичные пространства, 
+в которых сочетаются комфорт, функциональность и визуальная чистота.
 </p>
 </div>
 </section>
@@ -200,17 +213,17 @@ background:#eee;
 
 <div class="card">
 <h3>Дизайн-проект</h3>
-<p>Полный комплект чертежей, планировка и визуализация интерьера.</p>
+<p>Полный комплект чертежей и визуализаций.</p>
 </div>
 
 <div class="card">
 <h3>3D визуализация</h3>
-<p>Фотореалистичные изображения будущего интерьера.</p>
+<p>Реалистичные изображения интерьера.</p>
 </div>
 
 <div class="card">
 <h3>Планировка</h3>
-<p>Оптимизация пространства и удобное расположение мебели.</p>
+<p>Продуманное распределение пространства.</p>
 </div>
 
 </div>
@@ -223,12 +236,10 @@ background:#eee;
 <h2>Портфолио</h2>
 
 <div class="portfolio">
-
 <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0">
 <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705">
 <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
 <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3">
-
 </div>
 
 </div>
@@ -239,32 +250,11 @@ background:#eee;
 <h2>Этапы работы</h2>
 
 <div class="steps">
-
-<div class="step">
-<h3>1</h3>
-<p>Консультация</p>
-</div>
-
-<div class="step">
-<h3>2</h3>
-<p>Планировка</p>
-</div>
-
-<div class="step">
-<h3>3</h3>
-<p>3D визуализация</p>
-</div>
-
-<div class="step">
-<h3>4</h3>
-<p>Рабочие чертежи</p>
-</div>
-
-<div class="step">
-<h3>5</h3>
-<p>Реализация</p>
-</div>
-
+<div class="step"><h3>1</h3><p>Консультация</p></div>
+<div class="step"><h3>2</h3><p>Планировка</p></div>
+<div class="step"><h3>3</h3><p>Визуализация</p></div>
+<div class="step"><h3>4</h3><p>Чертежи</p></div>
+<div class="step"><h3>5</h3><p>Реализация</p></div>
 </div>
 
 </div>
@@ -275,15 +265,13 @@ background:#eee;
 
 <h2>Связаться со мной</h2>
 
-<form id="contact-form">
+<form id="contact-form" action="#">
 
-<input type="text" placeholder="Ваше имя">
-
-<input type="tel" placeholder="Телефон">
-
+<input type="text" placeholder="Ваше имя" required>
+<input type="tel" placeholder="Телефон" required>
 <textarea placeholder="Комментарий"></textarea>
 
-<button class="btn">Отправить</button>
+<button type="submit" class="btn">Отправить</button>
 
 </form>
 
@@ -291,8 +279,9 @@ background:#eee;
 </section>
 
 <footer>
-<p>© Дизайн интерьера | Санкт-Петербург</p>
+<p>© Prosto Shevchuk Interior Design</p>
 </footer>
+
 <script>
 document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -301,17 +290,25 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
     let phone = document.querySelector("input[type='tel']").value;
     let message = document.querySelector("textarea").value;
 
-    let text = `Заявка с сайта:%0AИмя: ${name}%0AТелефон: ${phone}%0AКомментарий: ${message}`;
+    let text = `Заявка с сайта:\nИмя: ${name}\nТелефон: ${phone}\nКомментарий: ${message}`;
 
     let token = "8798453698:AAHGAdAninuOAHnh01VBSoAQu8HSGjX2d1M";
     let chat_id = "307272019";
 
-    let url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${text}`;
-
-    fetch(url)
-    .then(response => alert("Заявка отправлена!"))
-    .catch(error => alert("Ошибка отправки"));
+    fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            chat_id: chat_id,
+            text: text
+        })
+    })
+    .then(() => alert("Заявка отправлена!"))
+    .catch(() => alert("Ошибка отправки"));
 });
 </script>
+
 </body>
 </html>
