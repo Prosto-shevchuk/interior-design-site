@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дизайнер интерьера | Санкт-Петербург</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background:#f7f6f4;
+color:#333;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+background:white;
+padding:20px 0;
+position:sticky;
+top:0;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+}
+
+.hero{
+height:80vh;
+background:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover;
+display:flex;
+align-items:center;
+color:white;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.5);
+padding:40px;
+max-width:500px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:#c5a880;
+color:white;
+text-decoration:none;
+}
+
+section{
+padding:80px 0;
+}
+
+h2{
+margin-bottom:30px;
+font-size:32px;
+text-align:center;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.portfolio img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.step{
+background:white;
+padding:25px;
+}
+
+.contact{
+background:white;
+text-align:center;
+}
+
+form{
+max-width:500px;
+margin:auto;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#eee;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">Interior Design</div>
+<ul>
+<li><a href="#about">Обо мне</a></li>
+<li><a href="#services">Услуги</a></li>
+<li><a href="#portfolio">Портфолио</a></li>
+<li><a href="#contact">Контакты</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<h1>Дизайн интерьера квартир и домов</h1>
+<p>Создаю современные и функциональные интерьеры в Санкт-Петербурге</p>
+<a href="#contact" class="btn">Получить консультацию</a>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<h2>О дизайнере</h2>
+<p style="text-align:center; max-width:700px; margin:auto;">
+Я создаю продуманные интерьеры, в которых сочетаются эстетика,
+функциональность и комфорт. Работаю с квартирами и домами любой площади,
+помогаю реализовать интерьер от идеи до реализации.
+</p>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<h2>Услуги</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Дизайн-проект</h3>
+<p>Полный комплект чертежей, планировка и визуализация интерьера.</p>
+</div>
+
+<div class="card">
+<h3>3D визуализация</h3>
+<p>Фотореалистичные изображения будущего интерьера.</p>
+</div>
+
+<div class="card">
+<h3>Планировка</h3>
+<p>Оптимизация пространства и удобное расположение мебели.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="portfolio">
+<div class="container">
+<h2>Портфолио</h2>
+
+<div class="portfolio">
+
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0">
+<img src="https://images.unsplash.com/photo-1600607686527-6fb886090705">
+<img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
+<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3">
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Этапы работы</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1</h3>
+<p>Консультация</p>
+</div>
+
+<div class="step">
+<h3>2</h3>
+<p>Планировка</p>
+</div>
+
+<div class="step">
+<h3>3</h3>
+<p>3D визуализация</p>
+</div>
+
+<div class="step">
+<h3>4</h3>
+<p>Рабочие чертежи</p>
+</div>
+
+<div class="step">
+<h3>5</h3>
+<p>Реализация</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+
+<h2>Связаться со мной</h2>
+
+<form id="contact-form">
+
+<input type="text" placeholder="Ваше имя">
+
+<input type="tel" placeholder="Телефон">
+
+<textarea placeholder="Комментарий"></textarea>
+
+<button class="btn">Отправить</button>
+
+</form>
+
+</div>
+</section>
+
+<footer>
+<p>© Дизайн интерьера | Санкт-Петербург</p>
+</footer>
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.querySelector("input[type='text']").value;
+    let phone = document.querySelector("input[type='tel']").value;
+    let message = document.querySelector("textarea").value;
+
+    let text = `Заявка с сайта:%0AИмя: ${name}%0AТелефон: ${phone}%0AКомментарий: ${message}`;
+
+    let token = "8798453698:AAHGAdAninuOAHnh01VBSoAQu8HSGjX2d1M";
+    let chat_id = "307272019";
+
+    let url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${text}`;
+
+    fetch(url)
+    .then(response => alert("Заявка отправлена!"))
+    .catch(error => alert("Ошибка отправки"));
+});
+</script>
+</body>
+</html>
